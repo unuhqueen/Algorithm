@@ -1,9 +1,7 @@
 #include <stdio.h>
 int findMax(int arr[], int n){
-	int max;
 	if(n == 0) return arr[0];
-	if(arr[n - 1] > findMax(arr, n - 1)) return arr[n-1];
-	
+	else if(arr[n - 1] > findMax(arr, n - 1)) return arr[n-1];
 }
 
 int main(){
